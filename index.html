@@ -5,47 +5,81 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ProjectXpress</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{background:#0f172a;color:white;text-align:center;}
+body{
+background:#0f172a;
+color:white;
+text-align:center;
+scroll-behavior:smooth;
+}
 
+/* HEADER */
 header{
-padding:40px;
+padding:70px 20px;
 background:linear-gradient(135deg,#0a66c2,#00c6ff);
 }
 
-h1{font-size:40px;}
-p{opacity:0.9;}
-
-section{padding:30px;}
-
-.card{
-background:#1e293b;
-margin:15px;
-padding:20px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(0,0,0,0.3);
-}
+h1{font-size:48px;}
+.tagline{margin-top:10px;opacity:0.9}
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:15px 25px;
+margin-top:25px;
+padding:15px 30px;
 background:#25D366;
 color:white;
 text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+border-radius:10px;
+font-weight:600;
+transition:0.3s;
+}
+.btn:hover{transform:scale(1.08);}
+
+/* SECTION */
+section{padding:50px 20px;}
+
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
-footer{
-margin-top:30px;
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+max-width:300px;
+box-shadow:0 0 20px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+.card:hover{transform:translateY(-8px);}
+
+/* GALLERY */
+.gallery img{
+width:280px;
+border-radius:10px;
+margin:10px;
+}
+
+/* TESTIMONIAL */
+.testimonial{
+max-width:600px;
+margin:20px auto;
+background:#1e293b;
 padding:20px;
-font-size:14px;
+border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+padding:20px;
 opacity:0.6;
+font-size:14px;
 }
 </style>
 </head>
@@ -54,36 +88,58 @@ opacity:0.6;
 
 <header>
 <h1>ProjectXpress</h1>
-<p>Kal Submit? Aaj Ready.</p>
+<p class="tagline">Kal Submit? Aaj Ready.</p>
+<a class="btn" href="https://wa.me/918658705606">Order on WhatsApp</a>
 </header>
 
 <section>
-<h2>📚 School Projects Made Easy</h2>
-<p>Complete Project + Fast Delivery + Affordable Price</p>
-<a class="btn" href="https://wa.me/918658705606">Order on WhatsApp</a>
+<h2>📚 Our Services</h2>
+<div class="grid">
+<div class="card"><h3>Science Projects</h3><p>Diagrams + Practical Work</p></div>
+<div class="card"><h3>SST Projects</h3><p>Maps + Case Study</p></div>
+<div class="card"><h3>Custom Projects</h3><p>Any Topic Available</p></div>
+</div>
 </section>
 
 <section>
+<h2>🖼️ Sample Work</h2>
+<div class="gallery">
+<img src="https://via.placeholder.com/300x200">
+<img src="https://via.placeholder.com/300x200">
+<img src="https://via.placeholder.com/300x200">
+</div>
+</section>
 
-<div class="card">
-<h3>🎓 Services</h3>
-<p>Science | SST | English | Custom Projects</p>
+<section>
+<h2>⭐ What Students Say</h2>
+
+<div class="testimonial">
+<p>"Best project service! Teacher ne full marks diye."</p>
 </div>
 
-<div class="card">
-<h3>💰 Pricing</h3>
-<p>Basic ₹149 | Standard ₹399 | Premium ₹799</p>
-</div>
-
-<div class="card">
-<h3>🔥 Why Choose Us</h3>
-<p>Fast Delivery | Clean Work | Student Friendly</p>
+<div class="testimonial">
+<p>"Last moment me project banwaaya — life saver!"</p>
 </div>
 
 </section>
 
+<section>
+<h2>💰 Pricing</h2>
+<div class="grid">
+<div class="card"><h3>Basic</h3><p>₹149</p></div>
+<div class="card"><h3>Standard</h3><p>₹399</p></div>
+<div class="card"><h3>Premium</h3><p>₹799</p></div>
+</div>
+</section>
+
+<section>
+<h2>📲 Order Now</h2>
+<p>Click below & send “PROJECT”</p>
+<a class="btn" href="https://wa.me/918658705606">Order Now</a>
+</section>
+
 <footer>
-© 2026 ProjectXpress
+© 2026 ProjectXpress | Designed for Students 🚀
 </footer>
 
 </body>
